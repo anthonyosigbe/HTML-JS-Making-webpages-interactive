@@ -27,7 +27,7 @@
               </ul>
           </td>
           <td>
-              <img src="https://www.kasandbox.org/programming-images/avatars/marcimus.png" id="avatar-1" title="Marcimus, A pink, innocent avatar" alt="Marcimus, A pink, innocent avatar">
+              <img src="https://www.kasandbox.org/programming-images/avatars/marcimus.png" id="avatar-1" alt="Marcimus, A pink, innocent avatar">
           </td>
       </tr>
       <tr>
@@ -38,7 +38,7 @@
               </ul>
           </td>
           <td>
-              <img src="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png" id="avatar-2" title="Old Spice Mann, A green, angry avatar" alt="Old Spice Mann, A green, angry avatar">
+              <img src="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png" id="avatar-2"  alt="Old Spice Mann, A green, angry avatar">
           </td>
       </tr>
       <tr>
@@ -49,7 +49,7 @@
               </ul>
           </td>
           <td>
-              <img src="https://www.kasandbox.org/programming-images/avatars/orange-juice-squid.png" id="avatar-3" title="Orange Juice Squid, An orange, multi-legged avatar"  alt="Orange Juice Squid, An orange, multi-legged avatar">
+              <img src="https://www.kasandbox.org/programming-images/avatars/orange-juice-squid.png" id="avatar-3"   alt="Orange Juice Squid, An orange, multi-legged avatar">
           </td>
       </tr>
       </tbody>
@@ -58,9 +58,17 @@
       <script>
         var avatarEls = document.getElementsByTagName("img");
         for (var i = 0; i< avatarEls.length; i++){
-          avatarEls[i].style.height = "12em";
-          
-        }      
+          avatarEls[i].style.height = "12em"; 
+        } 
+        
+        var tooltipsEl = document.getElementById("avatar-1")
+        tooltipsEl.title = "Marcimus, A pink, innocent avatar"
+
+        var tooltipsEl = document.getElementById("avatar-2")
+        tooltipsEl.title = "Old Spice Mann, A green, angry avatar"
+
+        var tooltipsEl = document.getElementById("avatar-3")
+        tooltipsEl.title = "Orange Juice Squid, An orange, multi-legged avatar"
         
       </script>
 
