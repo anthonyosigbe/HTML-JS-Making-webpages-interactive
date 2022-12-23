@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge: Avatar Attributes</title>
+ 
+</head>
+<body>
+
+  <h1>Which avatar is which?</h1>
+    
+  <table>
+      <thead>
+          <tr>
+              <th>Attributes</th>
+              <th>Avatar</th>
+          </tr>
+      </thead>
+      <tbody>
+      <tr>
+          <td>
+              <ul>
+                  <li>pink</li>
+                  <li>innocent</li>
+              </ul>
+          </td>
+          <td>
+              <img src="https://www.kasandbox.org/programming-images/avatars/marcimus.png" id="avatar-1" title="Marcimus, A pink, innocent avatar" alt="Marcimus, A pink, innocent avatar">
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <ul>
+                  <li>green</li>
+                  <li>ANGRY</li>
+              </ul>
+          </td>
+          <td>
+              <img src="https://www.kasandbox.org/programming-images/avatars/old-spice-man.png" id="avatar-2" title="Old Spice Mann, A green, angry avatar" alt="Old Spice Mann, A green, angry avatar">
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <ul>
+                  <li>orange</li>
+                  <li>multi-legged</li>
+              </ul>
+          </td>
+          <td>
+              <img src="https://www.kasandbox.org/programming-images/avatars/orange-juice-squid.png" id="avatar-3" title="Orange Juice Squid, An orange, multi-legged avatar"  alt="Orange Juice Squid, An orange, multi-legged avatar">
+          </td>
+      </tr>
+      </tbody>
+  </table>
+  
+      <script>
+        var avatarEls = document.getElementsByTagName("img");
+        for (var i = 0; i< avatarEls.length; i++){
+          avatarEls[i].style.height = "12em";
+          
+        }      
+        
+      </script>
+
+    
+  
+</body>
+</html>
