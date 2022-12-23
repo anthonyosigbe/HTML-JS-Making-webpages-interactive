@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge: Style Guide</title>
+</head>
+<body>
+
+  <h1>Style guide</h1>
+
+  <p>The hottest color to wear right now is:
+      <span id="trendy-color">?</span>
+  </p>
+  
+  <p>This is the trendy way to sign an autograph:
+      <span id="trendy-handwriting">?</span>
+  </p>
+  
+  <p>This is the trendy way to frame photographs:
+      <br>
+      <img id="trendy-frame" src="https://www.kasandbox.org/programming-images/avatars/mr-pink.png" alt="Cool avatar">
+  </p>
+  
+  
+  <script>
+    var colorEl = document.getElementById("trendy-color");
+      colorEl.innerHTML = "Blue"
+      colorEl.style.color = "blue"
+    var handEl  = document.getElementById("trendy-handwriting");
+      handEl.innerHTML = "Pastor Chris Delvan"
+      handEl.style.fontFamily = "cursive"
+
+    var frameEl = document.getElementById("trendy-frame");
+      frameEl.style.border = "1em solid Orange"
+  </script>
+  
+  
+</body>
+</html>
