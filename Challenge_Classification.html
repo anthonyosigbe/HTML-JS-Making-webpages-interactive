@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge: Classification</title>
+  <style>
+    .right-answer {
+        background: rgb(0, 255, 9);
+    }
+    
+    .wrong-answer { 
+        background: rgb(237, 28, 0);
+    }
+    </style>
+</head>
+<body>
+
+  <h2>Pop Quiz: Animal Classification</h2>
+        
+  <p>Which animal class do humans belong to?</p>
+  <ul id="answers">
+      <li>Mammalia</li>
+      <li>Ascidiacea</li>
+      <li>Reptilia</li>
+  </ul>
+  
+  <script>
+  var answers = document.querySelectorAll('#answers li');
+  var rightAnswer = answers[0];
+  rightAnswer.className = "right-answer"
+  var wrongAnswer1 = answers[1];
+  wrongAnswer1.className = "wrong-answer"
+  var wrongAnswer2 = answers[2];
+  wrongAnswer2.className = "wrong-answer"
+  </script>
+  
+</body>
+</html>
