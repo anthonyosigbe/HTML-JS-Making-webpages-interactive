@@ -26,6 +26,24 @@
         border-radius: 50%;
         background: rgb(237, 237, 237);
     }
+
+    .planet1 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        padding: 10px;
+        position: flex;
+    }
+    .moon1 {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: rgb(237, 237, 237);
+    }
+
+    
 </style>
 </head>
 <body>
@@ -35,14 +53,14 @@
 <script>
 
   var divEl = document.createElement("div");
-  divEl.className = "moon"
-  document.body.appendChild(divEl);
-
-  var divEl = document.createElement("div");
   divEl.textContent = "Earth";
   divEl.className = "planet"
   divEl.style.backgroundColor = "#636CA4";
   document.body.appendChild(divEl);
+
+  var moonEl = document.createElement("div");
+  moonEl.className = "moon"
+  document.body.appendChild(moonEl);
 
   
 
@@ -56,14 +74,23 @@
 
   var divEl = document.createElement("div");
   divEl.textContent = "Mars";
-  divEl.className = "planet"
+  divEl.className = "planet";
   divEl.style.backgroundColor = "red";
   document.body.appendChild(divEl);
 
   var moonEl = document.createElement("div");
-  moonEl.className = "moon"
+  moonEl.className = "moon";
   document.body.appendChild(moonEl);
-  
+
+  var divEl = document.createElement("div");
+  divEl.textContent = "Jupiter";
+  divEl.className = "planet1";
+  divEl.style.backgroundColor = "red";
+  document.body.appendChild(divEl);
+
+  var moonEl = document.createElement("div");
+  moonEl.className = "moon1";
+  document.body.appendChild(moonEl);
  
 </script>   
 
