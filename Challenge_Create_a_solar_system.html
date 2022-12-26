@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge: Create a solar system</title>
+
+  <style>
+   body {
+        background-color:black;
+        padding: 10px;
+    }
+    .planet {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+    }
+    .moon {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: rgb(237, 237, 237);
+    }
+</style>
+</head>
+<body>
+
+    
+
+<script>
+
+  var divEl = document.createElement("div");
+  divEl.className = "moon"
+  document.body.appendChild(divEl);
+
+  var divEl = document.createElement("div");
+  divEl.textContent = "Earth";
+  divEl.className = "planet"
+  divEl.style.backgroundColor = "#636CA4";
+  document.body.appendChild(divEl);
+
+  
+
+  var divEl = document.createElement("div");
+  divEl.textContent = "Mercury";
+  divEl.className = "planet"
+  divEl.style.backgroundColor = "#DACDBE";
+  document.body.appendChild(divEl);
+
+  
+
+  var divEl = document.createElement("div");
+  divEl.textContent = "Mars";
+  divEl.className = "planet"
+  divEl.style.backgroundColor = "red";
+  document.body.appendChild(divEl);
+
+  var moonEl = document.createElement("div");
+  moonEl.className = "moon"
+  document.body.appendChild(moonEl);
+  
+ 
+</script>   
+
+ 
+  
+</body>
+</html>
