@@ -16,7 +16,7 @@
             // Make it count up on a timer, calling this function
             var seconds = document.getElementById("seconds");
             var countUp = function() {
-              seconds.textContent = parseInt(seconds.textContent) + 1;
+              seconds.textContent = parseFloat(seconds.textContent) + 1;
             };
 
             var timer = window.setInterval(countUp, 2000);
