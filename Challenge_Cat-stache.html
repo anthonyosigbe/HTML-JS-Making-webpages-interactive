@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge: Cat-stache</title>
+  <style>
+    #mustache-pic {
+        position: absolute;
+    }
+</style>
+</head>
+<body>
+
+    <img id="cat-pic" src="https://www.kasandbox.org/programming-images/animals/cat.png" width="300" alt="cat photo">
+        
+        <img id="mustache-pic" src="https://www.kasandbox.org/programming-images/misc/mustache.png" alt="mustache" width="100" style="visibility: hidden">
+        
+        <script>
+            var catPic = document.getElementById("cat-pic");
+            var onCatClick = function(e) {
+                var stashePic = document.getElementById("mustache-pic"); 
+                document.body.appendChild(stashePic);
+                stashePic.style.top = e.clientY + "px";
+                stashePic.style.left = e.clientX + "px";
+                document.getElementById("mustache-pic").style.visibility = "visible";
+            };
+            catPic.addEventListener("click", onCatClick);
+            
+        </script>
+  
+</body>
+</html>
