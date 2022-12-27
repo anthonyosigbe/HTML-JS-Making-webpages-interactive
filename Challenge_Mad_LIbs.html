@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge: Mad LIbs</title>
+</head>
+<body>
+
+  <h1>Mad Libs</h1>
+     
+  <ul>
+    <li>Noun: <input type="text" id="noun"></li>
+    <li>Adjective: <input type="text" id="adjective"></li>
+    <li>Someone's Name: <input type="text" id="person"></li>
+  </ul>
+   
+  <button id="lib-button">Lib it!</button>
+    
+  <p>Generated story: 
+  <span id="story"></span>
+  </p>
+
+  <script>
+      var libButton = document.getElementById('lib-button');
+      var libIt = function() {
+      var storyDiv = document.getElementById("story");
+      var noun = document.getElementById("noun").value;
+      var adjective = document.getElementById("adjective").value;
+      var name = document.getElementById("person").value;
+      storyDiv.innerHTML = "As " + name + " that had coin, enjoyed the rain " + adjective +" " + noun + " was busy looking for shelter.";
+      };
+
+      libButton.addEventListener('click', libIt);
+      
+  </script>
+  
+</body>
+</html>
