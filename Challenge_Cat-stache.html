@@ -9,13 +9,17 @@
     #mustache-pic {
         position: absolute;
     }
+
+    .mustache-visual{
+      visibility : hidden;
+    }
 </style>
 </head>
 <body>
 
     <img id="cat-pic" src="https://www.kasandbox.org/programming-images/animals/cat.png" width="300" alt="cat photo">
         
-        <img id="mustache-pic" src="https://www.kasandbox.org/programming-images/misc/mustache.png" alt="mustache" width="100" style="visibility: hidden">
+        <img id="mustache-pic" src="https://www.kasandbox.org/programming-images/misc/mustache.png" alt="mustache" width="100" class="mustache-visual">
         
         <script>
             var catPic = document.getElementById("cat-pic");
@@ -24,7 +28,7 @@
                 document.body.appendChild(stashePic);
                 stashePic.style.top = e.clientY + "px";
                 stashePic.style.left = e.clientX + "px";
-                document.getElementById("mustache-pic").style.visibility = "visible";
+                document.getElementById("mustache-pic").className = "visible";
             };
             catPic.addEventListener("click", onCatClick);
             
